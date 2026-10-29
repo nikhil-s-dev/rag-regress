@@ -55,3 +55,14 @@ jobs:
           name: rag-regress-report
           path: rag-regress-report.json
           if-no-files-found: ignore
+
+  jitpack-check:
+    name: Check published JitPack artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch published POM and JAR
+        run: |
+          base=https://jitpack.io/com/github/nikhilsunku/rag-regress/v0.1.1
+          curl --fail --show-error --location --retry 2 --max-time 120 "$base/rag-regress-v0.1.1.pom" -o /tmp/rag-regress.pom
+          curl --fail --show-error --location --retry 2 --max-time 120 "$base/rag-regress-v0.1.1.jar" -o /tmp/rag-regress.jar
+          jar tf /tmp/rag-regress.jar | grep -q 'io/github/nikhilucumberlands/ragregress/RagEval.class'
