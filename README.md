@@ -22,6 +22,8 @@ Retrieval is the part of a RAG system that breaks quietly. A new embedding model
 
 ## Use it in JUnit tests
 
+Requires Java 21 or later.
+
 After publishing a release tag and confirming that JitPack successfully builds it, add the dependency through JitPack:
 
 ```xml
