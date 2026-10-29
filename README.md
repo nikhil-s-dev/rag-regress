@@ -37,7 +37,7 @@ After publishing a release tag and confirming that JitPack successfully builds i
 <dependency>
   <groupId>com.github.nikhilsunku</groupId>
   <artifactId>rag-regress</artifactId>
-  <version>v0.1.0</version>
+  <version>v0.1.1</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -122,7 +122,7 @@ java -jar target/rag-regress.jar run \
 ```
 
 ```text
-rag-regress 0.1.0
+rag-regress 0.1.1
 golden set  examples/golden.jsonl (32 queries)
 retriever   bm25:examples/corpus.jsonl (fields title,text)
 

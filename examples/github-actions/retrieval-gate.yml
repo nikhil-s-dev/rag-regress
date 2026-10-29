@@ -19,7 +19,7 @@ jobs:
       - name: Start the service under test
         run: docker compose up -d --wait search-api
       - name: Download rag-regress
-        run: gh release download v0.1.0 --repo nikhilsunku/rag-regress --pattern rag-regress.jar
+        run: gh release download v0.1.1 --repo nikhilsunku/rag-regress --pattern rag-regress.jar
         env:
           GH_TOKEN: ${{ github.token }}
       - name: Check retrieval against the baseline

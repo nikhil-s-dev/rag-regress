@@ -1,6 +1,6 @@
 name: Release
 
-# Push a tag like v0.1.0 to attach the jar to a GitHub release. JitPack builds the same tag for
+# Push a tag like v0.1.1 to attach the jar to a GitHub release. JitPack builds the same tag for
 # projects that depend on the library.
 on:
   push:
