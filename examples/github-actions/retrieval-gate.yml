@@ -1,0 +1,35 @@
+# Example workflow for a RAG service repository: fail a pull request when retrieval quality drops.
+# Assumes the service exposes POST /search returning {"results": [{"id": ...}, ...]} and that
+# eval/golden.jsonl and eval/baseline.json are committed. Refresh the baseline deliberately, in its
+# own pull request, when a change is meant to move the numbers.
+name: Retrieval quality
+
+on:
+  pull_request:
+
+jobs:
+  retrieval-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Start the service under test
+        run: docker compose up -d --wait search-api
+      - name: Download rag-regress
+        run: gh release download v0.1.0 --repo nikhilsunku/rag-regress --pattern rag-regress.jar
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Check retrieval against the baseline
+        run: |
+          java -jar rag-regress.jar run \
+            --golden eval/golden.jsonl \
+            --retriever http://localhost:8080/search \
+            --http-body '{"query": "{query}", "top_k": "{k}"}' \
+            --id-path 'results[*].id' \
+            --k 1,5,10 \
+            --threshold "recall@5>=0.80" --threshold "error_rate<=1%" --threshold "latency_p95<300ms" \
+            --baseline eval/baseline.json --gate recall@5,ndcg@10 \
+            --json-out rag-regress-report.json

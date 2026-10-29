@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and test (Java ${{ matrix.java }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        java: ["21", "25"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+          cache: maven
+      - name: Build and run tests
+        run: ./mvnw --batch-mode --no-transfer-progress verify
+
+  retrieval-gate:
+    name: Retrieval quality gate on the example corpus
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - name: Package
+        run: ./mvnw --batch-mode --no-transfer-progress -DskipTests package
+      - name: Evaluate and compare with the committed baseline
+        run: |
+          java -jar target/rag-regress.jar run \
+            --golden examples/golden.jsonl \
+            --retriever bm25:examples/corpus.jsonl \
+            --k 1,3,5,10 \
+            --threshold "recall@5>=0.85" --threshold "error_rate<=0%" \
+            --baseline examples/baseline.json \
+            --gate recall@5,ndcg@10 \
+            --json-out rag-regress-report.json
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: rag-regress-report
+          path: rag-regress-report.json
+          if-no-files-found: ignore

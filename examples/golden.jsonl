@@ -1,0 +1,32 @@
+{"id": "q01", "query": "How do I rotate an API key without downtime?", "relevant": {"doc-api-keys": 2}, "tags": ["security"]}
+{"id": "q02", "query": "A former employee still has access. How are accounts removed automatically?", "relevant": {"doc-scim": 2, "doc-sso-saml": 1}, "tags": ["security"]}
+{"id": "q03", "query": "Can our team log in with Okta?", "relevant": {"doc-sso-saml": 2, "doc-scim": 1}, "tags": ["security"]}
+{"id": "q04", "query": "Let a contractor deploy services without seeing billing", "relevant": {"doc-roles": 2}, "tags": ["security"]}
+{"id": "q05", "query": "Do you support hardware security keys?", "relevant": {"doc-mfa": 2}, "tags": ["security"]}
+{"id": "q06", "query": "Who deleted an API key last week?", "relevant": {"doc-audit-log": 2, "doc-api-keys": 1}, "tags": ["security"]}
+{"id": "q07", "query": "When is the monthly invoice emailed and where can I download old ones?", "relevant": {"doc-invoices": 2}, "tags": ["billing"]}
+{"id": "q08", "query": "What happens if my card payment fails?", "relevant": {"doc-payment-methods": 2}, "tags": ["billing"]}
+{"id": "q09", "query": "Is inbound traffic charged?", "relevant": {"doc-pricing": 2}, "tags": ["billing"]}
+{"id": "q10", "query": "Get an alert before we overspend a project budget", "relevant": {"doc-budgets": 2, "doc-alerts": 1}, "tags": ["billing"]}
+{"id": "q11", "query": "We were charged twice by mistake. Can we get the money back?", "relevant": {"doc-refunds": 2, "doc-invoices": 1}, "tags": ["billing"]}
+{"id": "q12", "query": "Which regions can I deploy to?", "relevant": {"doc-regions": 2}, "tags": ["ops"]}
+{"id": "q13", "query": "Recover a table someone dropped an hour ago", "relevant": {"doc-restore": 2, "doc-backups": 2}, "tags": ["data"]}
+{"id": "q14", "query": "How long are application logs kept?", "relevant": {"doc-retention": 2, "doc-log-export": 1}, "tags": ["data"]}
+{"id": "q15", "query": "A customer asked us to delete all of their personal data", "relevant": {"doc-gdpr-export": 2}, "tags": ["data"]}
+{"id": "q16", "query": "I keep getting 429 errors from the API", "relevant": {"doc-rate-limits": 2, "doc-sdks": 1}, "tags": ["integrations"]}
+{"id": "q17", "query": "How can I verify a webhook really came from you?", "relevant": {"doc-webhooks": 2}, "tags": ["integrations"]}
+{"id": "q18", "query": "Our endpoint received the same webhook event twice", "relevant": {"doc-webhook-retries": 2}, "tags": ["integrations"]}
+{"id": "q19", "query": "Is there an official Java library?", "relevant": {"doc-sdks": 2}, "tags": ["integrations"]}
+{"id": "q20", "query": "Install the command-line tool on a Mac", "relevant": {"doc-cli": 2}, "tags": ["integrations"]}
+{"id": "q21", "query": "Manage databases from Kubernetes using Helm", "relevant": {"doc-k8s-operator": 2}, "tags": ["integrations"]}
+{"id": "q22", "query": "Scale a staging service to zero when it is idle", "relevant": {"doc-autoscaling": 2}, "tags": ["ops"]}
+{"id": "q23", "query": "Send p95 latency alerts to PagerDuty", "relevant": {"doc-alerts": 2, "doc-metrics": 1}, "tags": ["ops"]}
+{"id": "q24", "query": "Can Grafana read your metrics?", "relevant": {"doc-metrics": 2}, "tags": ["ops"]}
+{"id": "q25", "query": "What uptime do you guarantee, and what happens if you miss it?", "relevant": {"doc-sla": 2, "doc-refunds": 1}, "tags": ["billing"]}
+{"id": "q26", "query": "How fast does premium support respond to an outage?", "relevant": {"doc-support-plans": 2}, "tags": ["ops"]}
+{"id": "q27", "query": "Will you upgrade my Postgres major version automatically?", "relevant": {"doc-maintenance": 2}, "tags": ["data"]}
+{"id": "q28", "query": "Keep traffic between our AWS VPC and your services off the public internet", "relevant": {"doc-private-networking": 2}, "tags": ["ops"]}
+{"id": "q29", "query": "Use our own encryption key from AWS KMS", "relevant": {"doc-encryption": 2}, "tags": ["security"]}
+{"id": "q30", "query": "Where should I put database passwords for my service?", "relevant": {"doc-secrets": 2}, "tags": ["security"]}
+{"id": "q31", "query": "Ship logs to Splunk", "relevant": {"doc-log-export": 2}, "tags": ["integrations"]}
+{"id": "q32", "query": "Set up HTTPS for my own domain", "relevant": {"doc-custom-domains": 2}, "tags": ["ops"]}

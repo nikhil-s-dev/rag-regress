@@ -1,0 +1,29 @@
+name: Release
+
+# Push a tag like v0.1.0 to attach the jar to a GitHub release. JitPack builds the same tag for
+# projects that depend on the library.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - name: Build
+        run: ./mvnw --batch-mode --no-transfer-progress verify
+      - name: Create GitHub release with the jar
+        run: |
+          gh release view "$GITHUB_REF_NAME" || gh release create "$GITHUB_REF_NAME" --generate-notes
+          gh release upload "$GITHUB_REF_NAME" target/rag-regress.jar --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}
