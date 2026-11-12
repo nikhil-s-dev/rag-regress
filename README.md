@@ -1,6 +1,6 @@
 # rag-regress
 
-Created and maintained by Nikhil Sunku.
+Created and maintained by Nikhil S.
 
 Regression tests for RAG retrieval quality in Java. Score any retriever (a vector store, Elasticsearch or OpenSearch, a search API, Spring AI or LangChain4j) against a labelled golden set, and fail the build when recall, MRR or nDCG drop.
 
@@ -18,7 +18,7 @@ Retrieval is the part of a RAG system that breaks quietly. A new embedding model
 - Logs runs to MLflow through its REST API
 - No runtime dependencies beyond Java 21 (verify using the Maven build)
 
-> **Validation:** GitHub Actions builds and tests this project on Java 21 and 25 and runs the example retrieval quality gate. See the [CI runs](https://github.com/nikhilsunku/rag-regress/actions/workflows/ci.yml) for results. Sample outputs remain illustrative.
+> **Validation:** GitHub Actions builds and tests this project on Java 21 and 25 and runs the example retrieval quality gate. See the [CI runs](https://github.com/nikhil-s-dev/rag-regress/actions/workflows/ci.yml) for results. Sample outputs remain illustrative.
 
 ## Use it in JUnit tests
 
@@ -109,7 +109,7 @@ To create the baseline, save a report from a run you trust (`report.save(Path.of
 The repository ships a small example: 34 help-center documents for a fictional cloud product and 32 labelled questions.
 
 ```bash
-git clone https://github.com/nikhilsunku/rag-regress.git
+git clone https://github.com/nikhil-s-dev/rag-regress.git
 cd rag-regress
 ./mvnw -q package                      # builds target/rag-regress.jar
 
