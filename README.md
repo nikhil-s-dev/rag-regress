@@ -24,7 +24,7 @@ Retrieval is the part of a RAG system that breaks quietly. A new embedding model
 
 Requires Java 21 or later.
 
-After publishing a release tag and confirming that JitPack successfully builds it, add the dependency through JitPack:
+After confirming that JitPack successfully builds the release under the current GitHub username, add the dependency through JitPack (coordinates below are unverified):
 
 ```xml
 <repositories>
@@ -35,7 +35,7 @@ After publishing a release tag and confirming that JitPack successfully builds i
 </repositories>
 
 <dependency>
-  <groupId>com.github.nikhilsunku</groupId>
+  <groupId>com.github.nikhil-s-dev</groupId>
   <artifactId>rag-regress</artifactId>
   <version>v0.1.1</version>
   <scope>test</scope>
