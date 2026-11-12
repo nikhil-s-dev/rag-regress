@@ -11,7 +11,7 @@
 
   <name>rag-regress</name>
   <description>Regression tests for RAG retrieval quality: recall@k, MRR and nDCG on a golden set, with baseline comparison and JUnit assertions.</description>
-  <url>https://github.com/nikhilsunku/rag-regress</url>
+  <url>https://github.com/nikhil-s-dev/rag-regress</url>
 
   <licenses>
     <license>
@@ -22,13 +22,13 @@
 
   <developers>
     <developer>
-      <name>Nikhil Sunku</name>
-      <url>https://github.com/nikhilsunku</url>
+      <name>Nikhil S</name>
+      <url>https://github.com/nikhil-s-dev</url>
     </developer>
   </developers>
 
   <scm>
-    <url>https://github.com/nikhilsunku/rag-regress</url>
+    <url>https://github.com/nikhil-s-dev/rag-regress</url>
   </scm>
 
   <properties>
