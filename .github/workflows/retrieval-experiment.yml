@@ -1,0 +1,30 @@
+name: Retrieval experiment
+on:
+  push:
+    paths:
+      - 'experiments/retrieval-comparison/**'
+      - 'examples/corpus.jsonl'
+      - 'examples/golden.jsonl'
+      - '.github/workflows/retrieval-experiment.yml'
+  pull_request:
+    paths:
+      - 'experiments/retrieval-comparison/**'
+      - 'examples/corpus.jsonl'
+      - 'examples/golden.jsonl'
+      - '.github/workflows/retrieval-experiment.yml'
+permissions:
+  contents: read
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r experiments/retrieval-comparison/requirements.txt
+      - run: python -m unittest discover -s experiments/retrieval-comparison -p 'test_*.py'
+      - run: python experiments/retrieval-comparison/extended.py --repeat 1 --out-dir /tmp/retrieval-output

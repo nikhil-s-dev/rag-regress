@@ -1,0 +1,27 @@
+{
+  "clock": "perf_counter_ns",
+  "warmup_passes": 1,
+  "timed_passes": 10,
+  "samples_per_method": 320,
+  "scope": "per-query in-process retrieval; excludes initialization, corpus indexing and metrics; hybrid includes both retrievers",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "runs": {
+    "tfidf": {
+      "p50_ms": 0.044085,
+      "p95_ms": 0.089982
+    },
+    "bm25": {
+      "p50_ms": 0.059173,
+      "p95_ms": 0.126035
+    },
+    "lsa": {
+      "p50_ms": 0.500378,
+      "p95_ms": 0.962212
+    },
+    "bm25_lsa_rrf": {
+      "p50_ms": 0.66728,
+      "p95_ms": 1.183427
+    }
+  }
+}
