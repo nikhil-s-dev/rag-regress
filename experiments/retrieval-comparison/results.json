@@ -1,0 +1,2866 @@
+{
+  "dataset": "examples/corpus.jsonl + examples/golden.jsonl",
+  "documents": 34,
+  "queries": 32,
+  "methodology": "Document title and body; ASCII alphanumeric lowercase tokens; positive-score results only; ties sorted by document id; graded nDCG uses 2^grade-1.",
+  "runs": {
+    "tfidf": {
+      "summary": {
+        "recall@1": 0.828125,
+        "mrr@1": 0.96875,
+        "ndcg@1": 0.96875,
+        "recall@3": 0.90625,
+        "mrr@3": 0.984375,
+        "ndcg@3": 0.9501038213503334,
+        "recall@5": 0.9375,
+        "mrr@5": 0.984375,
+        "ndcg@5": 0.9575171525647727,
+        "recall@10": 0.96875,
+        "mrr@10": 0.984375,
+        "ndcg@10": 0.9626988487158734
+      },
+      "per_query": [
+        {
+          "id": "q01",
+          "query": "How do I rotate an API key without downtime?",
+          "relevant": {
+            "doc-api-keys": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-api-keys",
+            "doc-rate-limits",
+            "doc-audit-log",
+            "doc-encryption",
+            "doc-webhook-retries",
+            "doc-pricing",
+            "doc-roles",
+            "doc-log-export",
+            "doc-k8s-operator",
+            "doc-payment-methods"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q02",
+          "query": "A former employee still has access. How are accounts removed automatically?",
+          "relevant": {
+            "doc-scim": 2,
+            "doc-sso-saml": 1
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-scim",
+            "doc-pricing",
+            "doc-refunds",
+            "doc-custom-domains",
+            "doc-regions",
+            "doc-alerts",
+            "doc-api-keys",
+            "doc-maintenance",
+            "doc-backups",
+            "doc-retention"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "5": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "10": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            }
+          }
+        },
+        {
+          "id": "q03",
+          "query": "Can our team log in with Okta?",
+          "relevant": {
+            "doc-sso-saml": 2,
+            "doc-scim": 1
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-sso-saml",
+            "doc-audit-log",
+            "doc-encryption",
+            "doc-scim",
+            "doc-webhooks",
+            "doc-log-export",
+            "doc-retention",
+            "doc-metrics",
+            "doc-webhook-retries",
+            "doc-status-page"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.944847956559586
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.944847956559586
+            }
+          }
+        },
+        {
+          "id": "q04",
+          "query": "Let a contractor deploy services without seeing billing",
+          "relevant": {
+            "doc-roles": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-roles",
+            "doc-api-keys",
+            "doc-invoices",
+            "doc-regions",
+            "doc-custom-domains",
+            "doc-autoscaling",
+            "doc-refunds",
+            "doc-cli",
+            "doc-budgets",
+            "doc-webhooks"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q05",
+          "query": "Do you support hardware security keys?",
+          "relevant": {
+            "doc-mfa": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-mfa",
+            "doc-support-plans",
+            "doc-api-keys",
+            "doc-webhook-retries",
+            "doc-maintenance",
+            "doc-rate-limits",
+            "doc-budgets",
+            "doc-k8s-operator",
+            "doc-sla",
+            "doc-regions"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q06",
+          "query": "Who deleted an API key last week?",
+          "relevant": {
+            "doc-audit-log": 2,
+            "doc-api-keys": 1
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-audit-log",
+            "doc-api-keys",
+            "doc-rate-limits",
+            "doc-retention",
+            "doc-backups",
+            "doc-encryption",
+            "doc-log-export",
+            "doc-k8s-operator",
+            "doc-payment-methods",
+            "doc-restore"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q07",
+          "query": "When is the monthly invoice emailed and where can I download old ones?",
+          "relevant": {
+            "doc-invoices": 2
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-invoices",
+            "doc-refunds",
+            "doc-scim",
+            "doc-budgets",
+            "doc-sla",
+            "doc-payment-methods",
+            "doc-log-export",
+            "doc-audit-log",
+            "doc-api-keys",
+            "doc-cli"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q08",
+          "query": "What happens if my card payment fails?",
+          "relevant": {
+            "doc-payment-methods": 2
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-payment-methods",
+            "doc-audit-log",
+            "doc-refunds",
+            "doc-sla"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q09",
+          "query": "Is inbound traffic charged?",
+          "relevant": {
+            "doc-pricing": 2
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-pricing",
+            "doc-private-networking",
+            "doc-scim",
+            "doc-log-export",
+            "doc-retention",
+            "doc-webhooks",
+            "doc-payment-methods",
+            "doc-encryption",
+            "doc-autoscaling"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q10",
+          "query": "Get an alert before we overspend a project budget",
+          "relevant": {
+            "doc-budgets": 2,
+            "doc-alerts": 1
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-budgets",
+            "doc-payment-methods",
+            "doc-restore",
+            "doc-alerts",
+            "doc-refunds",
+            "doc-cli",
+            "doc-sla",
+            "doc-webhook-retries",
+            "doc-rate-limits",
+            "doc-invoices"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.944847956559586
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.944847956559586
+            }
+          }
+        },
+        {
+          "id": "q11",
+          "query": "We were charged twice by mistake. Can we get the money back?",
+          "relevant": {
+            "doc-refunds": 2,
+            "doc-invoices": 1
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-payment-methods",
+            "doc-refunds",
+            "doc-webhook-retries",
+            "doc-rate-limits",
+            "doc-sla",
+            "doc-restore",
+            "doc-budgets",
+            "doc-pricing",
+            "doc-invoices",
+            "doc-status-page"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.0,
+              "mrr": 0.0,
+              "ndcg": 0.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 0.5,
+              "ndcg": 0.52129602861432
+            },
+            "5": {
+              "recall": 0.5,
+              "mrr": 0.5,
+              "ndcg": 0.52129602861432
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 0.5,
+              "ndcg": 0.6042031670319338
+            }
+          }
+        },
+        {
+          "id": "q12",
+          "query": "Which regions can I deploy to?",
+          "relevant": {
+            "doc-regions": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-regions",
+            "doc-backups",
+            "doc-retention",
+            "doc-cli",
+            "doc-api-keys",
+            "doc-roles",
+            "doc-mfa",
+            "doc-audit-log",
+            "doc-encryption",
+            "doc-webhook-retries"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q13",
+          "query": "Recover a table someone dropped an hour ago",
+          "relevant": {
+            "doc-restore": 2,
+            "doc-backups": 2
+          },
+          "tags": [
+            "data"
+          ],
+          "top10": [
+            "doc-restore",
+            "doc-support-plans",
+            "doc-k8s-operator",
+            "doc-payment-methods",
+            "doc-log-export",
+            "doc-scim",
+            "doc-gdpr-export",
+            "doc-autoscaling",
+            "doc-budgets",
+            "doc-refunds"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.6131471927654584
+            },
+            "5": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.6131471927654584
+            },
+            "10": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.6131471927654584
+            }
+          }
+        },
+        {
+          "id": "q14",
+          "query": "How long are application logs kept?",
+          "relevant": {
+            "doc-retention": 2,
+            "doc-log-export": 1
+          },
+          "tags": [
+            "data"
+          ],
+          "top10": [
+            "doc-retention",
+            "doc-log-export",
+            "doc-pricing",
+            "doc-audit-log",
+            "doc-backups",
+            "doc-secrets",
+            "doc-restore",
+            "doc-mfa",
+            "doc-maintenance",
+            "doc-status-page"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q15",
+          "query": "A customer asked us to delete all of their personal data",
+          "relevant": {
+            "doc-gdpr-export": 2
+          },
+          "tags": [
+            "data"
+          ],
+          "top10": [
+            "doc-gdpr-export",
+            "doc-retention",
+            "doc-restore",
+            "doc-encryption",
+            "doc-regions",
+            "doc-scim",
+            "doc-sla",
+            "doc-webhooks",
+            "doc-autoscaling",
+            "doc-refunds"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q16",
+          "query": "I keep getting 429 errors from the API",
+          "relevant": {
+            "doc-rate-limits": 2,
+            "doc-sdks": 1
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-rate-limits",
+            "doc-sdks",
+            "doc-api-keys",
+            "doc-gdpr-export",
+            "doc-audit-log",
+            "doc-webhooks",
+            "doc-restore",
+            "doc-invoices",
+            "doc-metrics",
+            "doc-cli"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q17",
+          "query": "How can I verify a webhook really came from you?",
+          "relevant": {
+            "doc-webhooks": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-webhooks",
+            "doc-budgets",
+            "doc-restore",
+            "doc-maintenance",
+            "doc-webhook-retries",
+            "doc-gdpr-export",
+            "doc-pricing",
+            "doc-alerts",
+            "doc-regions",
+            "doc-rate-limits"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q18",
+          "query": "Our endpoint received the same webhook event twice",
+          "relevant": {
+            "doc-webhook-retries": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-webhook-retries",
+            "doc-metrics",
+            "doc-alerts",
+            "doc-webhooks",
+            "doc-log-export",
+            "doc-budgets",
+            "doc-private-networking",
+            "doc-refunds",
+            "doc-k8s-operator",
+            "doc-restore"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q19",
+          "query": "Is there an official Java library?",
+          "relevant": {
+            "doc-sdks": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-sdks",
+            "doc-scim",
+            "doc-log-export",
+            "doc-payment-methods",
+            "doc-pricing",
+            "doc-k8s-operator",
+            "doc-restore",
+            "doc-private-networking",
+            "doc-retention",
+            "doc-webhooks"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q20",
+          "query": "Install the command-line tool on a Mac",
+          "relevant": {
+            "doc-cli": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-cli",
+            "doc-k8s-operator",
+            "doc-metrics",
+            "doc-payment-methods",
+            "doc-sso-saml",
+            "doc-alerts",
+            "doc-autoscaling",
+            "doc-restore",
+            "doc-invoices",
+            "doc-maintenance"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q21",
+          "query": "Manage databases from Kubernetes using Helm",
+          "relevant": {
+            "doc-k8s-operator": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-k8s-operator",
+            "doc-backups",
+            "doc-mfa",
+            "doc-webhook-retries",
+            "doc-gdpr-export",
+            "doc-invoices",
+            "doc-metrics",
+            "doc-webhooks",
+            "doc-encryption",
+            "doc-restore"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q22",
+          "query": "Scale a staging service to zero when it is idle",
+          "relevant": {
+            "doc-autoscaling": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-autoscaling",
+            "doc-sla",
+            "doc-refunds",
+            "doc-api-keys",
+            "doc-log-export",
+            "doc-k8s-operator",
+            "doc-gdpr-export",
+            "doc-encryption",
+            "doc-scim",
+            "doc-custom-domains"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q23",
+          "query": "Send p95 latency alerts to PagerDuty",
+          "relevant": {
+            "doc-alerts": 2,
+            "doc-metrics": 1
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-alerts",
+            "doc-budgets",
+            "doc-metrics",
+            "doc-restore",
+            "doc-api-keys",
+            "doc-log-export",
+            "doc-private-networking",
+            "doc-audit-log",
+            "doc-status-page",
+            "doc-invoices"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9639404333166532
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9639404333166532
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9639404333166532
+            }
+          }
+        },
+        {
+          "id": "q24",
+          "query": "Can Grafana read your metrics?",
+          "relevant": {
+            "doc-metrics": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-metrics",
+            "doc-retention",
+            "doc-audit-log",
+            "doc-webhook-retries",
+            "doc-mfa",
+            "doc-webhooks",
+            "doc-custom-domains",
+            "doc-budgets",
+            "doc-private-networking",
+            "doc-encryption"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q25",
+          "query": "What uptime do you guarantee, and what happens if you miss it?",
+          "relevant": {
+            "doc-sla": 2,
+            "doc-refunds": 1
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-sla",
+            "doc-audit-log",
+            "doc-k8s-operator",
+            "doc-maintenance",
+            "doc-rate-limits",
+            "doc-webhook-retries",
+            "doc-budgets",
+            "doc-api-keys",
+            "doc-refunds",
+            "doc-regions"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "5": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9091417955461737
+            }
+          }
+        },
+        {
+          "id": "q26",
+          "query": "How fast does premium support respond to an outage?",
+          "relevant": {
+            "doc-support-plans": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-support-plans",
+            "doc-regions",
+            "doc-pricing",
+            "doc-log-export",
+            "doc-restore",
+            "doc-k8s-operator",
+            "doc-payment-methods",
+            "doc-scim",
+            "doc-api-keys",
+            "doc-private-networking"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q27",
+          "query": "Will you upgrade my Postgres major version automatically?",
+          "relevant": {
+            "doc-maintenance": 2
+          },
+          "tags": [
+            "data"
+          ],
+          "top10": [
+            "doc-maintenance",
+            "doc-sdks",
+            "doc-rate-limits",
+            "doc-alerts",
+            "doc-refunds",
+            "doc-custom-domains",
+            "doc-budgets",
+            "doc-k8s-operator",
+            "doc-sla",
+            "doc-regions"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q28",
+          "query": "Keep traffic between our AWS VPC and your services off the public internet",
+          "relevant": {
+            "doc-private-networking": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-private-networking",
+            "doc-rate-limits",
+            "doc-autoscaling",
+            "doc-pricing",
+            "doc-encryption",
+            "doc-webhooks",
+            "doc-regions",
+            "doc-budgets",
+            "doc-audit-log",
+            "doc-custom-domains"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q29",
+          "query": "Use our own encryption key from AWS KMS",
+          "relevant": {
+            "doc-encryption": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-encryption",
+            "doc-private-networking",
+            "doc-api-keys",
+            "doc-gdpr-export",
+            "doc-audit-log",
+            "doc-status-page",
+            "doc-custom-domains",
+            "doc-rate-limits",
+            "doc-invoices",
+            "doc-metrics"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q30",
+          "query": "Where should I put database passwords for my service?",
+          "relevant": {
+            "doc-secrets": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-secrets",
+            "doc-restore",
+            "doc-regions",
+            "doc-refunds",
+            "doc-sla",
+            "doc-custom-domains",
+            "doc-backups",
+            "doc-metrics",
+            "doc-retention",
+            "doc-alerts"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q31",
+          "query": "Ship logs to Splunk",
+          "relevant": {
+            "doc-log-export": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-log-export",
+            "doc-backups",
+            "doc-retention",
+            "doc-secrets",
+            "doc-restore",
+            "doc-api-keys",
+            "doc-private-networking",
+            "doc-audit-log",
+            "doc-alerts",
+            "doc-status-page"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q32",
+          "query": "Set up HTTPS for my own domain",
+          "relevant": {
+            "doc-custom-domains": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-custom-domains",
+            "doc-webhook-retries",
+            "doc-budgets",
+            "doc-log-export",
+            "doc-private-networking",
+            "doc-status-page",
+            "doc-retention",
+            "doc-encryption",
+            "doc-alerts",
+            "doc-sdks"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "bm25": {
+      "summary": {
+        "recall@1": 0.828125,
+        "mrr@1": 0.96875,
+        "ndcg@1": 0.96875,
+        "recall@3": 0.890625,
+        "mrr@3": 0.96875,
+        "ndcg@3": 0.933813320456136,
+        "recall@5": 0.9375,
+        "mrr@5": 0.9765625,
+        "ndcg@5": 0.9523466484922338,
+        "recall@10": 0.96875,
+        "mrr@10": 0.9765625,
+        "ndcg@10": 0.957930602311852
+      },
+      "per_query": [
+        {
+          "id": "q01",
+          "query": "How do I rotate an API key without downtime?",
+          "relevant": {
+            "doc-api-keys": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-api-keys",
+            "doc-rate-limits",
+            "doc-audit-log",
+            "doc-pricing",
+            "doc-webhook-retries",
+            "doc-roles",
+            "doc-encryption",
+            "doc-log-export",
+            "doc-k8s-operator",
+            "doc-payment-methods"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q02",
+          "query": "A former employee still has access. How are accounts removed automatically?",
+          "relevant": {
+            "doc-scim": 2,
+            "doc-sso-saml": 1
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-scim",
+            "doc-pricing",
+            "doc-custom-domains",
+            "doc-refunds",
+            "doc-regions",
+            "doc-alerts",
+            "doc-api-keys",
+            "doc-maintenance",
+            "doc-backups",
+            "doc-secrets"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "5": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "10": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            }
+          }
+        },
+        {
+          "id": "q03",
+          "query": "Can our team log in with Okta?",
+          "relevant": {
+            "doc-sso-saml": 2,
+            "doc-scim": 1
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-sso-saml",
+            "doc-audit-log",
+            "doc-encryption",
+            "doc-scim",
+            "doc-webhooks",
+            "doc-log-export",
+            "doc-webhook-retries",
+            "doc-metrics",
+            "doc-retention",
+            "doc-status-page"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.944847956559586
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.944847956559586
+            }
+          }
+        },
+        {
+          "id": "q04",
+          "query": "Let a contractor deploy services without seeing billing",
+          "relevant": {
+            "doc-roles": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-roles",
+            "doc-api-keys",
+            "doc-regions",
+            "doc-custom-domains",
+            "doc-invoices",
+            "doc-autoscaling",
+            "doc-cli",
+            "doc-refunds",
+            "doc-webhooks",
+            "doc-budgets"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q05",
+          "query": "Do you support hardware security keys?",
+          "relevant": {
+            "doc-mfa": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-mfa",
+            "doc-support-plans",
+            "doc-api-keys",
+            "doc-webhook-retries",
+            "doc-maintenance",
+            "doc-rate-limits",
+            "doc-k8s-operator",
+            "doc-budgets",
+            "doc-sla",
+            "doc-regions"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q06",
+          "query": "Who deleted an API key last week?",
+          "relevant": {
+            "doc-audit-log": 2,
+            "doc-api-keys": 1
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-audit-log",
+            "doc-api-keys",
+            "doc-rate-limits",
+            "doc-retention",
+            "doc-backups",
+            "doc-encryption",
+            "doc-log-export",
+            "doc-k8s-operator",
+            "doc-payment-methods",
+            "doc-restore"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q07",
+          "query": "When is the monthly invoice emailed and where can I download old ones?",
+          "relevant": {
+            "doc-invoices": 2
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-invoices",
+            "doc-refunds",
+            "doc-payment-methods",
+            "doc-budgets",
+            "doc-scim",
+            "doc-log-export",
+            "doc-sla",
+            "doc-audit-log",
+            "doc-api-keys",
+            "doc-cli"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q08",
+          "query": "What happens if my card payment fails?",
+          "relevant": {
+            "doc-payment-methods": 2
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-payment-methods",
+            "doc-audit-log",
+            "doc-sla",
+            "doc-refunds"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q09",
+          "query": "Is inbound traffic charged?",
+          "relevant": {
+            "doc-pricing": 2
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-pricing",
+            "doc-private-networking",
+            "doc-scim",
+            "doc-log-export",
+            "doc-payment-methods",
+            "doc-retention",
+            "doc-webhooks",
+            "doc-encryption",
+            "doc-autoscaling"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q10",
+          "query": "Get an alert before we overspend a project budget",
+          "relevant": {
+            "doc-budgets": 2,
+            "doc-alerts": 1
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-budgets",
+            "doc-payment-methods",
+            "doc-restore",
+            "doc-alerts",
+            "doc-cli",
+            "doc-refunds",
+            "doc-sla",
+            "doc-rate-limits",
+            "doc-webhook-retries",
+            "doc-invoices"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.944847956559586
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.944847956559586
+            }
+          }
+        },
+        {
+          "id": "q11",
+          "query": "We were charged twice by mistake. Can we get the money back?",
+          "relevant": {
+            "doc-refunds": 2,
+            "doc-invoices": 1
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-webhook-retries",
+            "doc-payment-methods",
+            "doc-rate-limits",
+            "doc-refunds",
+            "doc-budgets",
+            "doc-restore",
+            "doc-pricing",
+            "doc-invoices",
+            "doc-status-page",
+            "doc-sla"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.0,
+              "mrr": 0.0,
+              "ndcg": 0.0
+            },
+            "3": {
+              "recall": 0.0,
+              "mrr": 0.0,
+              "ndcg": 0.0
+            },
+            "5": {
+              "recall": 0.5,
+              "mrr": 0.25,
+              "ndcg": 0.35583989829307827
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 0.25,
+              "ndcg": 0.44272256972879825
+            }
+          }
+        },
+        {
+          "id": "q12",
+          "query": "Which regions can I deploy to?",
+          "relevant": {
+            "doc-regions": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-regions",
+            "doc-backups",
+            "doc-retention",
+            "doc-cli",
+            "doc-api-keys",
+            "doc-roles",
+            "doc-audit-log",
+            "doc-encryption",
+            "doc-webhook-retries",
+            "doc-mfa"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q13",
+          "query": "Recover a table someone dropped an hour ago",
+          "relevant": {
+            "doc-restore": 2,
+            "doc-backups": 2
+          },
+          "tags": [
+            "data"
+          ],
+          "top10": [
+            "doc-restore",
+            "doc-support-plans",
+            "doc-k8s-operator",
+            "doc-payment-methods",
+            "doc-log-export",
+            "doc-scim",
+            "doc-gdpr-export",
+            "doc-autoscaling",
+            "doc-maintenance",
+            "doc-budgets"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.6131471927654584
+            },
+            "5": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.6131471927654584
+            },
+            "10": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.6131471927654584
+            }
+          }
+        },
+        {
+          "id": "q14",
+          "query": "How long are application logs kept?",
+          "relevant": {
+            "doc-retention": 2,
+            "doc-log-export": 1
+          },
+          "tags": [
+            "data"
+          ],
+          "top10": [
+            "doc-retention",
+            "doc-log-export",
+            "doc-pricing",
+            "doc-audit-log",
+            "doc-secrets",
+            "doc-backups",
+            "doc-restore",
+            "doc-mfa",
+            "doc-maintenance",
+            "doc-invoices"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q15",
+          "query": "A customer asked us to delete all of their personal data",
+          "relevant": {
+            "doc-gdpr-export": 2
+          },
+          "tags": [
+            "data"
+          ],
+          "top10": [
+            "doc-gdpr-export",
+            "doc-retention",
+            "doc-restore",
+            "doc-encryption",
+            "doc-regions",
+            "doc-scim",
+            "doc-webhooks",
+            "doc-sla",
+            "doc-autoscaling",
+            "doc-refunds"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q16",
+          "query": "I keep getting 429 errors from the API",
+          "relevant": {
+            "doc-rate-limits": 2,
+            "doc-sdks": 1
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-rate-limits",
+            "doc-sdks",
+            "doc-api-keys",
+            "doc-audit-log",
+            "doc-gdpr-export",
+            "doc-invoices",
+            "doc-webhooks",
+            "doc-metrics",
+            "doc-restore",
+            "doc-cli"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q17",
+          "query": "How can I verify a webhook really came from you?",
+          "relevant": {
+            "doc-webhooks": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-webhooks",
+            "doc-budgets",
+            "doc-restore",
+            "doc-maintenance",
+            "doc-webhook-retries",
+            "doc-regions",
+            "doc-pricing",
+            "doc-metrics",
+            "doc-alerts",
+            "doc-gdpr-export"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q18",
+          "query": "Our endpoint received the same webhook event twice",
+          "relevant": {
+            "doc-webhook-retries": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-webhook-retries",
+            "doc-metrics",
+            "doc-alerts",
+            "doc-budgets",
+            "doc-webhooks",
+            "doc-log-export",
+            "doc-private-networking",
+            "doc-refunds",
+            "doc-k8s-operator",
+            "doc-restore"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q19",
+          "query": "Is there an official Java library?",
+          "relevant": {
+            "doc-sdks": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-sdks",
+            "doc-scim",
+            "doc-log-export",
+            "doc-payment-methods",
+            "doc-pricing",
+            "doc-k8s-operator",
+            "doc-restore",
+            "doc-private-networking",
+            "doc-retention",
+            "doc-webhooks"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q20",
+          "query": "Install the command-line tool on a Mac",
+          "relevant": {
+            "doc-cli": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-cli",
+            "doc-k8s-operator",
+            "doc-metrics",
+            "doc-payment-methods",
+            "doc-alerts",
+            "doc-sso-saml",
+            "doc-maintenance",
+            "doc-sdks",
+            "doc-autoscaling",
+            "doc-invoices"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q21",
+          "query": "Manage databases from Kubernetes using Helm",
+          "relevant": {
+            "doc-k8s-operator": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-k8s-operator",
+            "doc-mfa",
+            "doc-backups",
+            "doc-webhook-retries",
+            "doc-gdpr-export",
+            "doc-invoices",
+            "doc-metrics",
+            "doc-webhooks",
+            "doc-cli",
+            "doc-encryption"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q22",
+          "query": "Scale a staging service to zero when it is idle",
+          "relevant": {
+            "doc-autoscaling": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-autoscaling",
+            "doc-sla",
+            "doc-refunds",
+            "doc-api-keys",
+            "doc-log-export",
+            "doc-encryption",
+            "doc-scim",
+            "doc-gdpr-export",
+            "doc-k8s-operator",
+            "doc-alerts"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q23",
+          "query": "Send p95 latency alerts to PagerDuty",
+          "relevant": {
+            "doc-alerts": 2,
+            "doc-metrics": 1
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-alerts",
+            "doc-budgets",
+            "doc-metrics",
+            "doc-restore",
+            "doc-api-keys",
+            "doc-log-export",
+            "doc-private-networking",
+            "doc-invoices",
+            "doc-status-page",
+            "doc-audit-log"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9639404333166532
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9639404333166532
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9639404333166532
+            }
+          }
+        },
+        {
+          "id": "q24",
+          "query": "Can Grafana read your metrics?",
+          "relevant": {
+            "doc-metrics": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-metrics",
+            "doc-retention",
+            "doc-audit-log",
+            "doc-webhook-retries",
+            "doc-mfa",
+            "doc-webhooks",
+            "doc-custom-domains",
+            "doc-maintenance",
+            "doc-budgets",
+            "doc-private-networking"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q25",
+          "query": "What uptime do you guarantee, and what happens if you miss it?",
+          "relevant": {
+            "doc-sla": 2,
+            "doc-refunds": 1
+          },
+          "tags": [
+            "billing"
+          ],
+          "top10": [
+            "doc-sla",
+            "doc-k8s-operator",
+            "doc-audit-log",
+            "doc-webhook-retries",
+            "doc-api-keys",
+            "doc-payment-methods",
+            "doc-refunds",
+            "doc-maintenance",
+            "doc-rate-limits",
+            "doc-gdpr-export"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "5": {
+              "recall": 0.5,
+              "mrr": 1.0,
+              "ndcg": 0.8262346571285599
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 0.9180385079206221
+            }
+          }
+        },
+        {
+          "id": "q26",
+          "query": "How fast does premium support respond to an outage?",
+          "relevant": {
+            "doc-support-plans": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-support-plans",
+            "doc-regions",
+            "doc-pricing",
+            "doc-log-export",
+            "doc-restore",
+            "doc-k8s-operator",
+            "doc-payment-methods",
+            "doc-scim",
+            "doc-api-keys",
+            "doc-private-networking"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q27",
+          "query": "Will you upgrade my Postgres major version automatically?",
+          "relevant": {
+            "doc-maintenance": 2
+          },
+          "tags": [
+            "data"
+          ],
+          "top10": [
+            "doc-maintenance",
+            "doc-sdks",
+            "doc-alerts",
+            "doc-rate-limits",
+            "doc-custom-domains",
+            "doc-refunds",
+            "doc-k8s-operator",
+            "doc-budgets",
+            "doc-sla",
+            "doc-regions"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q28",
+          "query": "Keep traffic between our AWS VPC and your services off the public internet",
+          "relevant": {
+            "doc-private-networking": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-private-networking",
+            "doc-rate-limits",
+            "doc-autoscaling",
+            "doc-pricing",
+            "doc-encryption",
+            "doc-webhooks",
+            "doc-regions",
+            "doc-budgets",
+            "doc-secrets",
+            "doc-custom-domains"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q29",
+          "query": "Use our own encryption key from AWS KMS",
+          "relevant": {
+            "doc-encryption": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-encryption",
+            "doc-private-networking",
+            "doc-api-keys",
+            "doc-gdpr-export",
+            "doc-status-page",
+            "doc-audit-log",
+            "doc-custom-domains",
+            "doc-rate-limits",
+            "doc-invoices",
+            "doc-metrics"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q30",
+          "query": "Where should I put database passwords for my service?",
+          "relevant": {
+            "doc-secrets": 2
+          },
+          "tags": [
+            "security"
+          ],
+          "top10": [
+            "doc-secrets",
+            "doc-restore",
+            "doc-regions",
+            "doc-sla",
+            "doc-custom-domains",
+            "doc-refunds",
+            "doc-backups",
+            "doc-metrics",
+            "doc-retention",
+            "doc-alerts"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q31",
+          "query": "Ship logs to Splunk",
+          "relevant": {
+            "doc-log-export": 2
+          },
+          "tags": [
+            "integrations"
+          ],
+          "top10": [
+            "doc-log-export",
+            "doc-backups",
+            "doc-retention",
+            "doc-secrets",
+            "doc-restore",
+            "doc-api-keys",
+            "doc-private-networking",
+            "doc-alerts",
+            "doc-invoices",
+            "doc-status-page"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        },
+        {
+          "id": "q32",
+          "query": "Set up HTTPS for my own domain",
+          "relevant": {
+            "doc-custom-domains": 2
+          },
+          "tags": [
+            "ops"
+          ],
+          "top10": [
+            "doc-custom-domains",
+            "doc-webhook-retries",
+            "doc-budgets",
+            "doc-log-export",
+            "doc-private-networking",
+            "doc-status-page",
+            "doc-encryption",
+            "doc-retention",
+            "doc-alerts",
+            "doc-sdks"
+          ],
+          "metrics": {
+            "1": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "3": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "5": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            },
+            "10": {
+              "recall": 1.0,
+              "mrr": 1.0,
+              "ndcg": 1.0
+            }
+          }
+        }
+      ]
+    }
+  }
+}

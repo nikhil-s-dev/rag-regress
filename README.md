@@ -11,6 +11,10 @@ A search index can change without breaking an API. A different embedding model, 
 
 `rag-regress` runs known questions through the retriever and measures whether the expected documents still appear near the top.
 
+## Retrieval comparison
+
+[Compare TF-IDF and BM25](experiments/retrieval-comparison/README.md) on the included fictional corpus. The experiment includes the script, per-query rankings, tests, and a discussion of its limits.
+
 ## Try it
 
 Requires JDK 21 or newer. The repository includes a fictional cloud-service corpus (34 documents), 32 labelled questions, and a checked-in BM25 baseline. No vector database or API credentials are needed for this example.
